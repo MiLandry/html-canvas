@@ -2,10 +2,36 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="">
-        <title>untitled</title>
+        <title>magical Canvas Land</title>
         
     </head>
     <body>
         <h1>Website</h1>
+        <!-- <canvas id="c" width="1024" height="768"></canvas> -->
+        <canvas id="c" width="1000" height="1000"></canvas>
+        <script type="text/javascript">
+        var c = document.querySelector("#c");
+        var ctx = c.getContext("2d");
+
+        ctx.fillRect(100,100,100,100);
+        ctx.strokeRect(50,50,50,50);
+
+
+
+
+
+/*
+        var image = new Image();
+        image.src = "Koala.jpg";
+
+        image.onload = function() 
+        {
+            console.log("Loaded image");
+            ctx.drawImage(image, 0,0,c.width, c.height);
+        }
+
+*/
+
+        </script>
     </body>
 </html>
